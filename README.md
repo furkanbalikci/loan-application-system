@@ -9,7 +9,7 @@ This project is a loan application web service developed using Spring Security t
 
 **Client:** HTML5, CSS3, JavaScript , Bootstrap
 
-**Server:** Java, Spring, Spring Security, MongoDB
+**Server:** Java 17.0.5, Spring, SpringBoot 3.0.2 Spring Security, MongoDB (Compass 1.35.0)
 
 
 ## Features
