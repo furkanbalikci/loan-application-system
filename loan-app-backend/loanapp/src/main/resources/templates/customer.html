@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Customer Management System</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    nav {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      float: left;
+    }
+
+    nav a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #111;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    table thead tr th {
+      text-align: left;
+      padding: 10px;
+      background-color: #ccc;
+      border: 1px solid #000;
+    }
+
+    table tbody tr td {
+      padding: 10px;
+      border: 1px solid #000;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    form input[type=text],
+    form input[type=tel],
+    form input[type=date] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      margin-bottom: 10px;
+    }
+
+    form button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #0062cc;
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <ul>
+    <li><a href="customer">Customer</a></li>
+    <li><a href="loan">Loan Application</a></li>
+    <li><a href="loanStatusCheck">Loan Status Check</a></li>
+    <li><a href="about">About Me</a></li>
+    <li style="float:right"><a href="/logout">Logout</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <form id="createCustomerForm">
+    <h2>Create a new customer:</h2>
+    <label for="tckn">TC No:</label>
+    <input type="text" id="tckn" name="tckn" maxlength="11" minlength="11" required>
+    <br>
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" required>
+    <br>
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" required>
+    <br>
+    <label for="phoneNum">Phone:</label>
+    <input type="tel" id="phoneNum" name="phoneNum" required>
+    <br>
+    <label for="incomeMonthly">Monthly Income (TL):</label>
+    <input type="text" id="incomeMonthly" name="incomeMonthly" required>
+    <br>
+    <label for="dateOfBirth">Birthday:</label>
+    <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+    <br>
+    <label for="deposit">Deposit:</label>
+    <input type="text" id="deposit" name="deposit" required>
+    <br>
+    <button type="submit">Create</button>
+  </form>
+
+  <h1>Customer Management System</h1>
+  <table>
+    <thead>
+    <tr>
+      <th>Customer ID</th>
+      <th>TC No</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Phone</th>
+      <th>Monthly Income (TL)</th>
+      <th>Birthday</th>
+      <th>Deposit</th>
+      <th>Edit / Delete</th>
+    </tr>
+    </thead>
+    <tbody id="customerTableBody"></tbody>
+  </table>
+</div>
+<script src="/assets/js/customer.js"></script>
+</body>
+</html>

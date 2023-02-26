@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<style type="text/css">
+  .container{
+    position: relative;
+    display: table; /*** Used for container align center ***/
+    width: 90%;
+    max-width: 940px;
+    margin: 2.5% auto 5% auto;
+  }
+
+</style>
+<body>
+<div id="user-login" class="container mt-5">
+  <h1 class="text-center">Login</h1>
+  <form action="#" method="post">
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" class="form-control">
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary btn-block">Submit</button>
+    </div>
+  </form>
+  <p class="text-center">Don't have an account? <a href="/api/v1/register">Register here</a>.</p>
+</div>
+</body>
+</html>

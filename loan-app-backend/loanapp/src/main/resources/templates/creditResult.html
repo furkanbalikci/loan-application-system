@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Credit Application Result</title>
+    <link rel="stylesheet" href="/assets/css/creditResult.css">
+    <style>
+        /* Add some basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 1em;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 1em;
+        }
+        #result-section, #limit-section{
+            display: flex;
+            text-align: justify-all;
+            margin-bottom: 1em;
+        }
+        #customer-information{
+            text-align: center;
+            margin-bottom: 1em;
+        }
+
+        #result-value, #limit-value {
+            font-weight: bold;
+        }
+        /* Add color-coding for result */
+        #result-value {
+            color: green;
+        }
+        #result-value.rejected {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<h2>Credit Application Result</h2>
+<div id="result-section">
+    <p id="result-label">Result:</p>
+    <p id="result-value"></p>
+</div>
+<div id="limit-section">
+    <p id="limit-label">Limit:</p>
+    <p id="limit-value"></p>
+</div>
+<h3>Customer Information</h3>
+<div id="customer-information">
+    <p><strong>ID Number:</strong> <span id="tckn"></span></p>
+    <p><strong>Name:</strong> <span id="firstName"></span></p>
+    <p><strong>Surname:</strong> <span id="lastName"></span></p>
+    <p><strong>Monthly Income:</strong> <span id="incomeMonthly"></span></p>
+    <p><strong>Email:</strong> <span id="email"></span></p>
+    <p><strong>Phone:</strong> <span id="phoneNum"></span></p>
+    <p><strong>Date of Birth:</strong> <span id="birth-date"></span></p>
+    <p><strong>Collateral:</strong> <span id="deposit"></span></p>
+</div>
+<script>
+    // Add logic to change the color of the result
+    const resultValue = document.querySelector('#result-value');
+    if (resultValue.textContent === 'APPROVED') {
+        resultValue.style.color = 'green';
+    } else if (resultValue.textContent === 'NOT APPROVED') {
+        resultValue.classList.add('rejected');
+    }
+</script>
+</body>
+</html>

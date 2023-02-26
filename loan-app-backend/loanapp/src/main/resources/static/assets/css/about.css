@@ -1,0 +1,62 @@
+/* Reset default styles for HTML elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set body background color */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Container class to center page content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Main content section styles */
+section {
+    margin: 20px 0;
+}
+
+/* Summary section styles */
+#summary {
+    background-color: #fff;
+    padding: 20px;
+}
+
+/* Photo and Info section styles */
+#photo-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Photo area styles */
+.photo-area {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px;
+}
+
+/* Photo styles */
+.photo-area img {
+    display: block;
+    width: 100%;
+    height: auto
+}

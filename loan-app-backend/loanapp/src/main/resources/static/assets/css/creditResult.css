@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+#result-section, #limit-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#result-label, #limit-label,#customer-information {
+    font-weight: bold;
+    margin-right: 10px;
+}
