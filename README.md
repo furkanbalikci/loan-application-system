@@ -11,6 +11,22 @@ This project is a loan application web service developed using Spring Security t
 
 **Server:** Java 17.0.5, Spring, SpringBoot 3.0.2 Spring Security, MongoDB (Compass 1.35.0)
 
+**Documentation:** OpenApi
+
+## API Reference
+
+
+#### Get Login Page
+
+```http
+  GET /api/v1/login
+```
+
+#### Swagger UI
+
+```http
+  GET /swagger-ui.html
+```
 
 ## Features
 
