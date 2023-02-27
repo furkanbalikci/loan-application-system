@@ -64,6 +64,12 @@ Users can create new customers using the "Create New Customer" form. All inputs 
 This section includes a brief summary of the developer's skills, experience, and goals.
 ![Screenshot 2023-02-27 at 01 02 58](https://user-images.githubusercontent.com/46796424/221440558-047f6a6a-2c5f-473a-9a72-bfef8f726256.png)
 
+### Documentation
+
+![Screenshot 2023-02-27 at 01 07 27](https://user-images.githubusercontent.com/46796424/221520855-0046052a-1827-4cd4-bfc6-421b95ab1c08.png)
+
+
+
 
 ### Conclusion
 
